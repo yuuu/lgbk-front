@@ -33,12 +33,12 @@ export default {
     return {
       email: '',
       password: '',
-      remember: false
+      remember: false,
     }
   },
   methods: {
     onSubmit: function () {
-      // TODO
+      this.$router.push('/dates')
     },
     onReset: function () {
       this.email = '';

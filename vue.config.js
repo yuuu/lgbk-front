@@ -8,6 +8,6 @@ module.exports = {
         '@router': '@/router',
         '@store': '@/store',
       }
-    }
+    },
   }
 };
