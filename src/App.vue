@@ -1,21 +1,19 @@
 <template>
   <div id="app">
-    <header>
-      <nav-bar />
-    </header>
-    <main>
-      <register />
-    </main>
+    <layout>
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
+    </layout>
   </div>
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
-import Register from './components/Register.vue'
+import Layout from '@partial/Layout'
 
 export default {
   name: 'app',
-  components: { NavBar, Register },
+  components: { Layout },
 }
 </script>
 
